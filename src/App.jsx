@@ -13,7 +13,7 @@ function App() {
     const [filter, setFilter] = useState("All");
     const [searchQuery, setSearchQuery] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
-    const tasksPerPage = 5;
+    const tasksPerPage = 6;
 
     const addTask = (task) => {
         setTasks([...tasks, { ...task, id: `task-${tasks.length + 1}` }]);
